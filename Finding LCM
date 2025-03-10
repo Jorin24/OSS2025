@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdbool.h>
+
+
+int main() {
+    int n, m, max_num;
+    scanf_s("%d %d", &n, &m);
+    
+    if(n>m) max_num=n;
+    else max_num=m;
+
+    while (true)
+    {
+        if(max_num%n==0 && max_num%m==0)
+        {
+            printf("%d",max_num);
+            return 0;
+        }
+        max_num++;
+    }
+}
