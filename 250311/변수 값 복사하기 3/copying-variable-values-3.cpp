@@ -7,11 +7,11 @@ int main() {
     b=5;
     c=3;
 
-    c=a;
+    a=c;
     a=a+c;
     b=b-c;
 
     printf("%d\n%d\n%d",a,b,c);
-    
+
     return 0;
 }
