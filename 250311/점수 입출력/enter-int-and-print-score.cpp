@@ -2,8 +2,8 @@
 using namespace std;
 
 int main() {
-    char a;
+    int a;
     cin >> a;
-    cout << "Your score is" << a << " point."
+    cout << "Your score is " << a << " point.";
     return 0;
 }
