@@ -6,7 +6,7 @@ int main() {
     cin>>N;
     for(int i=0;i<N;i++)
     {
-        cout<<"LeebrosCode";
+        cout<<"LeebrosCode"<<endl;
     }
     return 0;
 }
