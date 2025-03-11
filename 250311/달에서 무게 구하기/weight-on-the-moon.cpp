@@ -2,8 +2,11 @@
 using namespace std;
 
 int main() {
-    double weight=13, perc=0.165;
-    cout << weight << " * " << perc << " = " << weight*perc;
+    int weight=13;
+    double perc=0.165;
+    cout << fixed;
+    cout.precision(6);
+    cout << weight << " * " << perc << " = " << (double)weight*perc;
     
     return 0;
 }
