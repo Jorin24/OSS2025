@@ -14,7 +14,7 @@ int main() {
     }
     else
     {
-        if(age>=) cout<<"WOMAN";
+        if(age>=19) cout<<"WOMAN";
         else cout<<"GIRL";
     }
     return 0;
