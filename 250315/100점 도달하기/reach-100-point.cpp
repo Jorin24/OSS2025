@@ -11,6 +11,7 @@ int main() {
         else if (N>=70) cout << 'C';
         else if (N>=60) cout << 'D';
         else if (N<60) cout << 'F';
+        cout << " ";
     }
     return 0;
 }
