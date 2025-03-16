@@ -17,7 +17,7 @@ void text(int n) {
 int main() {
     cin >> N;
 
-    text(4);
+    text(N);
 
     return 0;
 }
