@@ -2,19 +2,28 @@
 
 using namespace std;
 
-int N;
-int Fib(int n) {
-    if(n==1)
-        return 1;
-    if(n==2)
-        return 1;
-    return Fib(n-2)+Fib(n-1);
+int N,cnt;
+int to_one(int N) {
+    
+    if(N==1)
+        return cnt;
+    else if(N%2==0)
+    {
+        N/=2;
+        cnt++;
+        to_one(N);
+    }
+    else if(N%2==1)
+    {
+        N/=3;
+        cnt++;
+        to_one(N);
+    }
+    return cnt;
 }
-
 int main() {
     cin >> N;
-    cout << Fib(N);
-    
+    cout << to_one(N);
 
     return 0;
 }
