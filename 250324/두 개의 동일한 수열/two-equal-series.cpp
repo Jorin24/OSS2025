@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int n,check=1;
+int n,check=0;
 int A[100];
 int B[100];
 
