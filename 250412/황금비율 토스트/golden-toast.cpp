@@ -14,12 +14,8 @@ list<char>::iterator it;
 int main() {
     cin >> n >> m;
     cin >> s;
-
-    char arr[n+1];
-
-    s.copy(arr,s.length()+1);           // 식빵 s를 배열 arr로 옮김
-    for(int i=0;i<s.length();i++) {     // arr배열에 있는 걸 리스트로 옮김
-        l.push_back(arr[i]);
+    for(int i=0;i<n;i++) {
+        l.push_back(s[i]);
     }
 
     it = l.end();
@@ -35,10 +31,10 @@ int main() {
             l.insert(it,c);
         }
         else if(command == 'L') {
-            it--;
+            if (it != l.begin()) it--;
         }
         else if(command == 'R') {
-            it++;
+            if(it != l.end()) it++;
         }
         else { // D
             it = l.erase(it);
