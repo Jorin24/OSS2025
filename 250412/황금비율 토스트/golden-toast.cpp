@@ -37,7 +37,7 @@ int main() {
             if(it != l.end()) it++;
         }
         else if(command == 'D') { // D
-            it = l.erase(it);
+            if(it != l.end()) it = l.erase(it);
         }
     }
     
