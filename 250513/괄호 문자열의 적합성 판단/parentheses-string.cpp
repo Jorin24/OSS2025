@@ -15,7 +15,7 @@ int main() {
     
     for(int i=0;str[i]!='\0';i++) {
         if(str[i] == '(') left++;
-        else right++;
+        else if(str[i] == ')') right++;
     }
 
     if(left==right) cout << "Yes";
